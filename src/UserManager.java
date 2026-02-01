@@ -23,7 +23,6 @@ public class UserManager {
         }
     }
 
-    // DRY: общий метод поиска пользователя
     private User findByEmail(String email) {
         for (User user : users) {
             if (user.getEmail().equals(email)) {
